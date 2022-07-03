@@ -1,0 +1,15 @@
+secret_word = "developer"
+user_guess = ""
+x = 0
+guess_limit = 5
+out_of_guesses = False
+
+while user_guess != secret_word and not(out_of_guesses):
+  if x < guess_limit:
+    user_guess = input("Please guess the secret word in 5 tries:  ")
+    x += 1
+  else:
+    out_of_guesses_ = True    
+    print("BETTER LUCK NEXT TIME?")
+else:
+  print("YOU GUESSED IT CONGRATS!!")
